@@ -1,0 +1,428 @@
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Certificate | Certificate Generator</title>
+
+
+
+<link rel="stylesheet" href="css/certificate.css">
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!-- TOOLBAR -->
+
+
+<div class="toolbar">
+
+
+<a href="dashboard.html" class="btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Dashboard
+
+</a>
+
+
+
+
+<button id="printBtn" class="btn">
+
+<i class="fa-solid fa-print"></i>
+
+Print
+
+</button>
+
+
+
+
+
+<button id="downloadBtn" class="btn">
+
+<i class="fa-solid fa-file-pdf"></i>
+
+Download PDF
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- CERTIFICATE -->
+
+
+<div id="certificate" class="certificate">
+
+
+
+
+
+<img
+
+id="certificateBg"
+
+class="certificate-bg"
+
+src="images/default-certificate.jpg"
+
+alt="Certificate Background">
+
+
+
+
+
+
+
+<div class="content">
+
+
+
+
+
+
+<!-- LOGO -->
+
+
+<img
+
+id="certificateLogo"
+
+class="certificate-logo"
+
+src=""
+
+alt="Logo">
+
+
+
+
+
+
+
+<h1 id="certificateTitle">
+
+CERTIFICATE OF ACHIEVEMENT
+
+</h1>
+
+
+
+
+
+
+
+<p class="subtitle">
+
+This Certificate Is Proudly Presented To
+
+</p>
+
+
+
+
+
+
+
+<h2 id="candidateName">
+
+Candidate Name
+
+</h2>
+
+
+
+
+
+
+
+
+<p class="description">
+
+For successfully completing
+
+<br>
+
+
+
+<strong id="courseName">
+
+Course Name
+
+</strong>
+
+
+
+<br>
+
+
+
+with outstanding performance and dedication.
+
+</p>
+
+
+
+
+
+
+
+
+<h3 id="certificateType">
+
+Course Completion
+
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="details">
+
+
+
+
+
+<div>
+
+
+<p class="label">
+
+Certificate ID
+
+</p>
+
+
+<p id="certificateId">
+
+CERT-000001
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+
+<p class="label">
+
+Issue Date
+
+</p>
+
+
+<p id="issueDate">
+
+01 January 2026
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="organization">
+
+
+<p>
+Issued By
+</p>
+
+
+<h3 id="organizationName">
+
+Certificate Generator
+
+</h3>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- SIGNATURE -->
+
+
+
+<div class="signature-area">
+
+
+
+
+
+<div class="signature">
+
+
+<div class="line"></div>
+
+
+<p>
+Authorized Signature
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="signature">
+
+
+<div class="line"></div>
+
+
+<p>
+Director
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- QR -->
+
+
+<div class="qr-section">
+
+
+<div id="qrCode" class="qr-code"></div>
+
+
+<p>
+Scan to Verify
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- SCRIPTS -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+
+
+<script src="js/app.js"></script>
+
+
+<script src="js/certificate.js"></script>
+
+
+
+
+
+</body>
+
+</html>

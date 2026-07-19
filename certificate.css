@@ -1,0 +1,806 @@
+
+}/* ==========================================
+   CERTIFICATE CSS
+   Professional Certificate Generator
+========================================== */
+
+
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    background:#f1f5f9;
+
+    padding:30px;
+
+}
+
+
+
+/* ==========================================
+   TOOLBAR
+========================================== */
+
+
+.toolbar{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.btn{
+
+    padding:12px 28px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+.btn:hover{
+
+    background:#1e40af;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+/* ==========================================
+   CERTIFICATE PAGE
+========================================== */
+
+
+.certificate{
+
+
+    width:1123px;
+
+    height:794px;
+
+
+    margin:auto;
+
+
+    position:relative;
+
+
+    background:#fff;
+
+
+    overflow:hidden;
+
+
+    border-radius:5px;
+
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.18);
+
+
+}
+
+
+
+/* Background Image */
+
+
+.certificate-bg{
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    width:100%;
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+    z-index:0;
+
+
+}
+
+
+
+/* Overlay */
+
+
+.certificate::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:rgba(255,255,255,.15);
+
+
+    z-index:1;
+
+
+}
+
+
+
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+
+.content{
+
+
+    position:relative;
+
+    z-index:2;
+
+
+    width:100%;
+
+    height:100%;
+
+
+    padding:80px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+#certificateTitle{
+
+
+    font-size:45px;
+
+
+    font-weight:700;
+
+
+    letter-spacing:2px;
+
+
+    color:#1e3a8a;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.subtitle{
+
+
+    font-size:20px;
+
+
+    color:#555;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+#candidateName{
+
+
+    font-size:55px;
+
+
+    font-weight:700;
+
+
+    color:#111827;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.description{
+
+
+    max-width:850px;
+
+
+    margin:auto;
+
+
+    font-size:22px;
+
+
+    line-height:1.8;
+
+
+    color:#374151;
+
+
+}
+
+
+
+
+.description strong{
+
+
+    color:#2563eb;
+
+
+}
+
+
+
+
+
+/* ==========================================
+   DETAILS
+========================================== */
+
+
+.details{
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    margin-top:50px;
+
+
+}
+
+
+
+.details div{
+
+
+    min-width:200px;
+
+
+}
+
+
+
+.label{
+
+
+    font-size:14px;
+
+
+    color:#6b7280;
+
+
+    margin-bottom:5px;
+
+
+}
+
+
+
+.details p:last-child{
+
+
+    font-size:18px;
+
+
+    font-weight:600;
+
+
+    color:#111827;
+
+
+}
+
+
+
+
+/* ==========================================
+   SIGNATURE AREA
+========================================== */
+
+
+.signature-area{
+
+
+    position:absolute;
+
+
+    bottom:80px;
+
+
+    left:80px;
+
+
+    right:80px;
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.line{
+
+
+    width:200px;
+
+
+    border-top:2px solid #111;
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+.signature-area p{
+
+
+    font-size:15px;
+
+
+    color:#374151;
+
+
+}
+
+
+
+
+/* ==========================================
+   QR CODE
+========================================== */
+
+
+.qr-code{
+
+
+    position:absolute;
+
+
+    right:80px;
+
+
+    bottom:160px;
+
+
+    background:white;
+
+
+    padding:10px;
+
+
+    border-radius:10px;
+
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+.qr-code img{
+
+
+    width:110px;
+
+    height:110px;
+
+}
+
+
+
+
+/* ==========================================
+   WATERMARK
+========================================== */
+
+
+.certificate:before{
+
+
+    content:"CERTIFICATE";
+
+
+    position:absolute;
+
+
+    top:40%;
+
+    left:20%;
+
+
+    font-size:100px;
+
+
+    font-weight:700;
+
+
+    color:rgba(37,99,235,.05);
+
+
+    transform:rotate(-25deg);
+
+
+    z-index:1;
+
+
+}
+
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+
+@media(max-width:1200px){
+
+
+.certificate{
+
+
+    width:100%;
+
+    height:auto;
+
+    aspect-ratio:1.414/1;
+
+
+}
+
+
+
+.content{
+
+
+    padding:50px;
+
+
+}
+
+
+
+#certificateTitle{
+
+
+    font-size:35px;
+
+
+}
+
+
+
+#candidateName{
+
+
+    font-size:40px;
+
+
+}
+
+
+
+.description{
+
+
+    font-size:18px;
+
+
+}
+
+
+
+.signature-area{
+
+
+    bottom:40px;
+
+    left:50px;
+
+    right:50px;
+
+
+}
+
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+
+body{
+
+    padding:10px;
+
+}
+
+
+
+.toolbar{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.btn{
+
+
+    width:100%;
+
+    text-align:center;
+
+
+}
+
+
+
+.content{
+
+
+    padding:25px;
+
+
+}
+
+
+
+#certificateTitle{
+
+
+    font-size:24px;
+
+
+}
+
+
+
+#candidateName{
+
+
+    font-size:28px;
+
+
+}
+
+
+
+.subtitle{
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.description{
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.details{
+
+
+    flex-direction:column;
+
+
+    gap:15px;
+
+
+}
+
+
+
+.signature-area{
+
+
+    position:relative;
+
+    bottom:auto;
+
+    left:auto;
+
+    right:auto;
+
+
+    flex-direction:column;
+
+
+    gap:25px;
+
+
+    margin-top:30px;
+
+
+}
+
+
+
+.qr-code{
+
+
+    position:relative;
+
+
+    right:auto;
+
+    bottom:auto;
+
+
+    margin:30px auto;
+
+
+}
+
+
+}
+
+
+
+
+/* ==========================================
+   PRINT / PDF
+========================================== */
+
+
+@media print{
+
+
+body{
+
+
+    background:white;
+
+    padding:0;
+
+
+}
+
+
+
+.toolbar{
+
+
+    display:none;
+
+
+}
+
+
+
+.certificate{
+
+
+    width:297mm;
+
+
+    height:210mm;
+
+
+    border-radius:0;
+
+
+    box-shadow:none;
+
+
+    page-break-after:always;
+
+
+}
+
+
+
+@page{
+
+
+    size:A4 landscape;
+
+    margin:0;
+
+
+}
+
+
+}

@@ -1,0 +1,602 @@
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Verify Certificate | Certificate Generator</title>
+
+
+<link rel="stylesheet" href="css/admin.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<div class="container">
+
+
+
+
+
+<!-- SIDEBAR -->
+
+
+<aside class="sidebar">
+
+
+
+<div class="logo">
+
+<i class="fa-solid fa-certificate"></i>
+
+<h2>
+Certificate Generator
+</h2>
+
+</div>
+
+
+
+
+
+
+
+<ul class="menu">
+
+
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+
+
+
+
+
+<li>
+
+<a href="create.html">
+
+<i class="fa-solid fa-plus"></i>
+
+Create Certificate
+
+</a>
+
+</li>
+
+
+
+
+
+
+<li>
+
+<a href="templates.html">
+
+<i class="fa-solid fa-image"></i>
+
+Templates
+
+</a>
+
+</li>
+
+
+
+
+
+
+<li class="active">
+
+<a href="verify.html">
+
+<i class="fa-solid fa-qrcode"></i>
+
+Verify Certificate
+
+</a>
+
+</li>
+
+
+
+
+
+
+<li>
+
+<a href="settings.html">
+
+<i class="fa-solid fa-gear"></i>
+
+Settings
+
+</a>
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+<a href="#" id="logoutBtn">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+
+
+</aside>
+
+
+
+
+
+
+
+
+<!-- MAIN -->
+
+
+<main class="main">
+
+
+
+
+
+
+<header class="topbar">
+
+
+
+<button class="menu-btn" id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+
+
+<h1>
+Certificate Verification
+</h1>
+
+
+
+
+
+<div class="admin">
+
+<i class="fa-solid fa-user-shield"></i>
+
+<span>
+Admin
+</span>
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- VERIFY BOX -->
+
+
+<section class="form-container">
+
+
+
+<h2>
+
+<i class="fa-solid fa-shield-check"></i>
+
+Verify Certificate
+
+</h2>
+
+
+
+
+
+
+<form id="verifyForm">
+
+
+
+
+
+
+<div class="form-group">
+
+
+<label>
+Certificate ID
+</label>
+
+
+
+<input
+
+type="text"
+
+id="verifyId"
+
+placeholder="Enter Certificate ID (CERT-123456)"
+
+required>
+
+
+</div>
+
+
+
+
+
+
+
+
+<button
+
+type="submit"
+
+class="btn-blue">
+
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Verify Now
+
+
+</button>
+
+
+
+
+
+
+</form>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- RESULT -->
+
+
+
+<section>
+
+
+<div 
+id="result"
+
+class="result"
+
+style="display:none;">
+
+
+
+
+
+
+<div class="verification-header">
+
+
+<i class="fa-solid fa-circle-check"></i>
+
+
+<h2>
+Verification Result
+</h2>
+
+
+</div>
+
+
+
+
+
+
+<h3 id="status">
+
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="certificate-details">
+
+
+
+
+
+
+<div class="detail-box">
+
+
+<i class="fa-solid fa-user"></i>
+
+<p>
+Name
+</p>
+
+<strong id="vName">
+-
+</strong>
+
+
+</div>
+
+
+
+
+
+
+<div class="detail-box">
+
+
+<i class="fa-solid fa-book"></i>
+
+<p>
+Course
+</p>
+
+<strong id="vCourse">
+-
+</strong>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="detail-box">
+
+
+<i class="fa-solid fa-certificate"></i>
+
+<p>
+Certificate Type
+</p>
+
+<strong id="vType">
+-
+</strong>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="detail-box">
+
+
+<i class="fa-solid fa-id-card"></i>
+
+<p>
+Certificate ID
+</p>
+
+<strong id="vId">
+-
+</strong>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="detail-box">
+
+
+<i class="fa-solid fa-calendar"></i>
+
+<p>
+Issue Date
+</p>
+
+<strong id="vDate">
+-
+</strong>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="detail-box">
+
+
+<i class="fa-solid fa-building"></i>
+
+<p>
+Organization
+</p>
+
+<strong id="vOrg">
+-
+</strong>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="verify-actions">
+
+
+<a 
+href="certificate.html"
+class="btn-blue">
+
+
+<i class="fa-solid fa-eye"></i>
+
+View Certificate
+
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+© 2026 Certificate Generator |
+
+Digital Certificate Verification System
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="js/app.js"></script>
+
+<script src="js/verify.js"></script>
+
+
+
+</body>
+
+</html>
